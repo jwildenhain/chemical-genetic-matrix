@@ -28,7 +28,7 @@
 # 
 
 # working directory
-kYourUserFolder  <- "~/Documents/GitHub/Chemical_Genetic_Matrix/Prediction"
+kYourUserFolder  <- "~/Documents/GitHub/chemical-genetic_matrix/Prediction"
 kParamVersion <- "01"
 
 # Bliss Independence cutoff

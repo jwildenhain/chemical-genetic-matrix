@@ -30,7 +30,7 @@
 # * compare model with J48 tree to support MeanDecreaseGini and sentinel behaviour 
 # * compare prediction with the naive Bayes classifier in R
 
-kYourUserFolder <- "~/Documents/GitHub/Chemical_Genetic_Matrix/Prediction"
+kYourUserFolder <- "~/Documents/GitHub/chemical-genetic-matrix/Prediction"
 setwd(kYourUserFolder)
 
 # install required packages
@@ -316,27 +316,4 @@ dev.print(pdf,
           width  = 7,
           height = 7,
           file   = paste0("Plots/NB-NB_performance_v", rf.version, ".pdf"))
-
-# SVM performance to predict synergistic molecules from CGM data
-cost   <- 62144
-gamma  <- 4.882812e-04
-
-ext.eval.mysvm <- svm(as.factor(synergy) ~ ., 
-                      data        = d2.rf[c(row.none, row.syn), c(-1, -2, -103, -204)], 
-                      method      = "C-classification",
-                      probability = TRUE,
-                      kernel      = "radial",
-                      cost        = cost,
-                      gamma       = gamma)
-
-summary(ext.eval.mysvm)
-pred <- predict(svm_model1,x)
-system.time(pred <- predict(svm_model1,x))
-
-svm_tune <- tune(svm, train.x=x, train.y=y, 
-                 kernel="radial", ranges=list(cost=10^(-1:2), gamma=c(.5,1,2)))
-
-print(svm_tune)
-
-table(pred,y)
 

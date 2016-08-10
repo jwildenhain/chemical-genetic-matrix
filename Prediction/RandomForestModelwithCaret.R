@@ -31,7 +31,7 @@
 # * compare model results with the randomForest package
 # * compare prediction with the naive Bayes classifier in R
 
-kYourUserFolder <- "~/Documents/GitHub/Chemical_Genetic_Matrix/Prediction"
+kYourUserFolder <- "~/Documents/GitHub/chemical-genetic-matrix/Prediction"
 setwd(kYourUserFolder)
 
 # source required libraries
@@ -79,7 +79,7 @@ dim(df.nBtm)
 
 #
 # add the follow-up data to extend synergistic combos for learners
-d              <- read.csv(file = "../Data/ChemGRID_sentinels_NBextract_ext.csv.gz",
+d <- read.csv(file = "../Data/ChemGRID_sentinels_NBextract_ext.csv.gz",
                            head = TRUE,
                            sep  = ",")
 colnames(d)[1] <- "cid"
@@ -96,16 +96,15 @@ given$X <- NULL
 head(given)
 dim(given)
 
-
 #
 # merge cids, bliss and sentinel data
 df.nBetm1 <- merge(d, given, by.x = "cid", by.y = "cida")
 dim(df.nBetm1)
-df.nBetm <- merge(d, df.nBetm1, by.x = "cid",by.y = "cidb")
+df.nBetm <- merge(d, df.nBetm1, by.x = "cid", by.y = "cidb")
 dim(df.nBetm)
 head(df.nBetm)
 
-df.nBetm[ ,c(1, 102, 203)]
+df.nBetm[, c(1, 102, 203)]
 dim(df.nBetm)
 
 bp.data = boxplot(df.nBtm$bliss)
@@ -120,10 +119,9 @@ head(df.nBetm)
 names(df.nBtm)
 names(df.nBetm)
 
-df.nBtm.ext = rbind(df.nBtm, df.nBetm)
+df.nBtm.ext <- rbind(df.nBtm, df.nBetm)
 dim(df.nBtm.ext)
-df.nBtm     = df.nBtm.ext
-
+df.nBtm     <- df.nBtm.ext
 
 # Apply statistics / machine learning algorithms (do PCA, RF and J48)
 synergy <- rep("none", nrow(df.nBtm))
@@ -138,7 +136,7 @@ colnames(d2)
 
 #
 # Do random forest analysis using caret
-d2.rev <- d2[ ,c(1, 103:203, 2:102, 204)]  # create reverse obj
+d2.rev <- d2[, c(1, 103:203, 2:102, 204)]  # create reverse obj
 colnames(d2.rev) <- colnames(d2)
 head(d2)
 d2.rf  <- rbind(d2, d2.rev)  # make symmetric matrix
@@ -208,7 +206,7 @@ head(proba.rf)
 dim(proba.rf)
 
 tnum  <- unclass(data.train$synergy)
-sc.rf <- Logit(proba.rf[ ,2])
+sc.rf <- Logit(proba.rf[, 2])
 
 plot(sc.rf, data.train$bliss, 
      pch  = 16,
@@ -244,7 +242,7 @@ auc  <- performance(pred, "auc")@y.values[[1]]
 auc
 plot(perf, avg = "threshold", colorize = T, lwd = 3, main = "NB-RF caret train ROC")
 legend("bottomright", 
-       legend = c(paste("Random Forests (AUC=", formatC(auc, digits = 4, format = "f"), ")", sep = "")),
+       legend = c(paste0("Random Forest (AUC = ", formatC(auc, digits = 4, format = "f"), ")")),
           col = c("red"),
           lty = 1)
 dev.print(pdf, 
@@ -289,7 +287,7 @@ head(proba.rf)
 dim(proba.rf)
 
 tnum <- unclass(data.test$synergy)
-sc.rf <- Logit(proba.rf[ ,2])
+sc.rf <- Logit(proba.rf[, 2])
 
 plot(sc.rf, data.test$bliss, 
      pch  = 16,
@@ -326,9 +324,8 @@ auc  <- performance(pred, "auc")@y.values[[1]]
 auc
 plot(perf, avg = "threshold", colorize = T, lwd = 3, main = "NB-RF caret test")
 legend("bottomright", 
-       legend = c(paste("Random Forest (AUC = ", 
-                        formatC(auc, digits = 4, format = "f"), ")",
-                        sep = "")),
+       legend = c(paste0("Random Forest (AUC = ", 
+                        formatC(auc, digits = 4, format = "f"), ")")),
           col = c("red"),
           lty = 1)
 dev.print(pdf, 
