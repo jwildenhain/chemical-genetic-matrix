@@ -26,12 +26,21 @@ pacman::p_load(caret,
                pROC, 
                randomForest, 
                FactoMineR, 
-               DAAG, 
-               ggplot2, 
+               DAAG,
+               DBI,
+               RMySQL,
+               gplots,
+               ggplot2,
+               MASS,
+               splines,
+               rpart,
                ROCR, 
                plyr, 
                party, 
-               e1071)
+               e1071,
+               outliers,
+               matlab,
+               amap)
 
 # load packages required for scripts
 library(gplots)
@@ -46,3 +55,8 @@ library(caret)
 library(ggplot2)
 library(ROCR)
 library(party)
+library(matlab)
+library(outliers)
+library(amap)
+library(DBI)
+library(RMySQL)
