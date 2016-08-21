@@ -40,7 +40,9 @@ pacman::p_load(caret,
                e1071,
                outliers,
                matlab,
-               amap)
+               amap,
+               RSvgDevice,
+               RSVGTipsDevice)
 
 # load packages required for scripts
 library(gplots)
