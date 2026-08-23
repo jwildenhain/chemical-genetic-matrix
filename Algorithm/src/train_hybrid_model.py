@@ -17,8 +17,8 @@ print("=================================================================")
 print("HYBRID GCN-ECFP MODEL (EARLY FUSION)")
 print("=================================================================")
 
-device = torch.device("cpu")
-print(f"Forcing CPU training due to PyTorch sm_120 compatibility issues on RTX 5080.")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Using {device} for training.")
 
 dataset_file = "data/predictive_matrix_cleaned.csv"
 if not os.path.exists(dataset_file):
