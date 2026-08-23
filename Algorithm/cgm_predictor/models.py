@@ -103,8 +103,15 @@ class HybridModel(nn.Module):
 
 class CGMPredictor:
     """Unified class for inferencing with ECFP, GCN, Hybrid, or Ensemble models."""
-    def __init__(self, model_type='ecfp', n_tasks=105):
+    def __init__(self, model_type='ecfp', n_tasks=105, use_gpu=False):
         self.model_type = model_type
+        
+        # Determine device
+        if use_gpu and torch.cuda.is_available():
+            self.device = torch.device('cuda')
+        else:
+            self.device = torch.device('cpu')
+            
         if self.model_type == 'ecfp':
             self.featurizer = dc.feat.CircularFingerprint(size=2048)
             # Create dummy multitask classifier
@@ -114,26 +121,23 @@ class CGMPredictor:
                 layer_sizes=[1024, 1024, 512],
                 dropouts=[0.3, 0.3, 0.2],
                 model_dir="models/deepchem_refined",
-                device=torch.device('cpu') # Force CPU due to sm_120 issue
+                device=self.device
             )
             self.model.restore()
         elif self.model_type == 'gcn':
             self.featurizer = dc.feat.MolGraphConvFeaturizer(use_edges=True)
-            # Force CPU due to RTX 5080 sm_120 PyTorch compatibility issue
-            self.device = torch.device('cpu')
             self.model = GCN(in_channels=30, hidden_channels=128, out_channels=n_tasks).to(self.device)
             self.model.load_state_dict(torch.load("models/deepchem_modern_gcn/pyg_model.pt", map_location=self.device))
             self.model.eval()
         elif self.model_type == 'hybrid':
             self.featurizer_gcn = dc.feat.MolGraphConvFeaturizer(use_edges=True)
             self.featurizer_ecfp = dc.feat.CircularFingerprint(size=2048)
-            self.device = torch.device('cpu')
             self.model = HybridModel(node_channels=30, gcn_hidden=32, ecfp_size=2048, ecfp_hidden=32, out_channels=n_tasks).to(self.device)
             self.model.load_state_dict(torch.load("models/hybrid_model/hybrid.pt", map_location=self.device))
             self.model.eval()
         elif self.model_type == 'ensemble':
-            self.model_ecfp = CGMPredictor(model_type='ecfp', n_tasks=n_tasks)
-            self.model_gcn = CGMPredictor(model_type='gcn', n_tasks=n_tasks)
+            self.model_ecfp = CGMPredictor(model_type='ecfp', n_tasks=n_tasks, use_gpu=use_gpu)
+            self.model_gcn = CGMPredictor(model_type='gcn', n_tasks=n_tasks, use_gpu=use_gpu)
         else:
             raise ValueError(f"Unknown model_type: {model_type}")
 

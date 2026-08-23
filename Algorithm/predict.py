@@ -17,6 +17,8 @@ def main():
                         help="Threshold for considering a strain 'Active' (default 0.5). If not binarizing, only prints strains >= threshold. Set to 0.0 to see all.")
     parser.add_argument("--binarize", action="store_true",
                         help="Binarize the output to Active (1) or Inactive (0) based on the threshold. Displays all strains.")
+    parser.add_argument("--use-gpu", action="store_true",
+                        help="Allow execution on GPU if available (default is CPU).")
     
     args = parser.parse_args()
 
@@ -40,7 +42,7 @@ def main():
     import warnings
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        predictor = CGMPredictor(model_type=args.model, n_tasks=len(tasks))
+        predictor = CGMPredictor(model_type=args.model, n_tasks=len(tasks), use_gpu=args.use_gpu)
     
     print(f"\nPredicting bioactivity for SMILES: {smiles}")
     try:
