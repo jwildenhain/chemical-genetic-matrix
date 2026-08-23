@@ -1,0 +1,498 @@
+{
+  "Ciclosporine": {
+    "name": "Ciclosporine",
+    "compound_id": "External Candidate",
+    "library": "N/A",
+    "smiles": "CC=CCC(C)C(O)C1C(=O)NC(CC)C(=O)N(C)CC(=O)N(C)C(CC(C)C)C(=O)NC(C(C)C)C(=O)N(C)C(CC(C)C)C(=O)NC(C)C(=O)NC(C)C(=O)N(C)C(CC(C)C)C(=O)N(C)C(CC(C)C)C(=O)N(C)C(C(C)C)C(=O)N1C",
+    "top5_predicted": [
+      {
+        "strain": "apc9",
+        "predicted_probability": 0.984,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "Sap",
+        "predicted_probability": 0.9722,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "GPR",
+        "predicted_probability": 0.9605,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "YPT6-2nd",
+        "predicted_probability": 0.9602,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "MT2481-FEN",
+        "predicted_probability": 0.9528,
+        "experimental_label": "Unscreened"
+      }
+    ],
+    "bottom5_predicted": [
+      {
+        "strain": "sec22",
+        "predicted_probability": 0.0449,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "ctf18",
+        "predicted_probability": 0.0444,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "tfp1",
+        "predicted_probability": 0.0418,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "CIN",
+        "predicted_probability": 0.017,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "kap123",
+        "predicted_probability": 0.0043,
+        "experimental_label": "Unscreened"
+      }
+    ],
+    "actual_experimental_actives": []
+  },
+  "Mebendazole": {
+    "name": "Mebendazole",
+    "compound_id": "External Candidate",
+    "library": "N/A",
+    "smiles": "COC(=O)Nc1nc2ccc(C(=O)c3ccccc3)cc2[nH]1",
+    "top5_predicted": [
+      {
+        "strain": "apc9",
+        "predicted_probability": 0.9844,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "Sap",
+        "predicted_probability": 0.9714,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "YPT6-2nd",
+        "predicted_probability": 0.9605,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "MT2481-FEN",
+        "predicted_probability": 0.9572,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "GPR",
+        "predicted_probability": 0.9566,
+        "experimental_label": "Unscreened"
+      }
+    ],
+    "bottom5_predicted": [
+      {
+        "strain": "ctf18",
+        "predicted_probability": 0.0452,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "sec22",
+        "predicted_probability": 0.0431,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "tfp1",
+        "predicted_probability": 0.0392,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "CIN",
+        "predicted_probability": 0.0163,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "kap123",
+        "predicted_probability": 0.0042,
+        "experimental_label": "Unscreened"
+      }
+    ],
+    "actual_experimental_actives": []
+  },
+  "Fluconazole": {
+    "name": "Fluconazole",
+    "compound_id": "SPE01503975",
+    "library": "Spectrum",
+    "smiles": "OC(Cn1cncn1)(Cn1cncn1)c1ccc(F)cc1F",
+    "top5_predicted": [
+      {
+        "strain": "apc9",
+        "predicted_probability": 0.9829,
+        "experimental_label": 0
+      },
+      {
+        "strain": "Sap",
+        "predicted_probability": 0.9725,
+        "experimental_label": 0
+      },
+      {
+        "strain": "GPR",
+        "predicted_probability": 0.9594,
+        "experimental_label": 0
+      },
+      {
+        "strain": "YPT6-2nd",
+        "predicted_probability": 0.9592,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "MT2481-FEN",
+        "predicted_probability": 0.9574,
+        "experimental_label": "Unscreened"
+      }
+    ],
+    "bottom5_predicted": [
+      {
+        "strain": "ctf18",
+        "predicted_probability": 0.0464,
+        "experimental_label": 0
+      },
+      {
+        "strain": "sec22",
+        "predicted_probability": 0.044,
+        "experimental_label": 0
+      },
+      {
+        "strain": "tfp1",
+        "predicted_probability": 0.0413,
+        "experimental_label": 0
+      },
+      {
+        "strain": "CIN",
+        "predicted_probability": 0.0171,
+        "experimental_label": 0
+      },
+      {
+        "strain": "kap123",
+        "predicted_probability": 0.0044,
+        "experimental_label": 0
+      }
+    ],
+    "actual_experimental_actives": [
+      {
+        "strain": "RIC1",
+        "experimental_label": 1,
+        "predicted_probability": 0.7987
+      },
+      {
+        "strain": "YPT",
+        "experimental_label": 1,
+        "predicted_probability": 0.4498
+      }
+    ]
+  },
+  "Chrysin": {
+    "name": "Chrysin",
+    "compound_id": "SPE01500709",
+    "library": "Spectrum",
+    "smiles": "O=c1cc(-c2ccccc2)oc2cc(O)cc(O)c12",
+    "top5_predicted": [
+      {
+        "strain": "apc9",
+        "predicted_probability": 0.9845,
+        "experimental_label": 1
+      },
+      {
+        "strain": "Sap",
+        "predicted_probability": 0.9704,
+        "experimental_label": 1
+      },
+      {
+        "strain": "YPT6-2nd",
+        "predicted_probability": 0.9598,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "GPR",
+        "predicted_probability": 0.9573,
+        "experimental_label": 0
+      },
+      {
+        "strain": "MT2481-FEN",
+        "predicted_probability": 0.9531,
+        "experimental_label": 0
+      }
+    ],
+    "bottom5_predicted": [
+      {
+        "strain": "sec22",
+        "predicted_probability": 0.0445,
+        "experimental_label": "Unscreened"
+      },
+      {
+        "strain": "ctf18",
+        "predicted_probability": 0.0437,
+        "experimental_label": 1
+      },
+      {
+        "strain": "tfp1",
+        "predicted_probability": 0.0396,
+        "experimental_label": 0
+      },
+      {
+        "strain": "CIN",
+        "predicted_probability": 0.0169,
+        "experimental_label": 0
+      },
+      {
+        "strain": "kap123",
+        "predicted_probability": 0.0043,
+        "experimental_label": 0
+      }
+    ],
+    "actual_experimental_actives": [
+      {
+        "strain": "apc9",
+        "experimental_label": 1,
+        "predicted_probability": 0.9845
+      },
+      {
+        "strain": "Sap",
+        "experimental_label": 1,
+        "predicted_probability": 0.9704
+      },
+      {
+        "strain": "HOC",
+        "experimental_label": 1,
+        "predicted_probability": 0.945
+      },
+      {
+        "strain": "htz1",
+        "experimental_label": 1,
+        "predicted_probability": 0.92
+      },
+      {
+        "strain": "met16",
+        "experimental_label": 1,
+        "predicted_probability": 0.9076
+      },
+      {
+        "strain": "ubp8",
+        "experimental_label": 1,
+        "predicted_probability": 0.9024
+      },
+      {
+        "strain": "BCK",
+        "experimental_label": 1,
+        "predicted_probability": 0.8917
+      },
+      {
+        "strain": "pex11",
+        "experimental_label": 1,
+        "predicted_probability": 0.8777
+      },
+      {
+        "strain": "pre9",
+        "experimental_label": 1,
+        "predicted_probability": 0.8427
+      },
+      {
+        "strain": "cla4",
+        "experimental_label": 1,
+        "predicted_probability": 0.8347
+      },
+      {
+        "strain": "mcm21",
+        "experimental_label": 1,
+        "predicted_probability": 0.8291
+      },
+      {
+        "strain": "Bck",
+        "experimental_label": 1,
+        "predicted_probability": 0.8283
+      },
+      {
+        "strain": "nup100",
+        "experimental_label": 1,
+        "predicted_probability": 0.8196
+      },
+      {
+        "strain": "gcn5",
+        "experimental_label": 1,
+        "predicted_probability": 0.7988
+      },
+      {
+        "strain": "RIC1",
+        "experimental_label": 1,
+        "predicted_probability": 0.7814
+      },
+      {
+        "strain": "bmi1",
+        "experimental_label": 1,
+        "predicted_probability": 0.7507
+      },
+      {
+        "strain": "TOP",
+        "experimental_label": 1,
+        "predicted_probability": 0.7152
+      },
+      {
+        "strain": "FKS",
+        "experimental_label": 1,
+        "predicted_probability": 0.7132
+      },
+      {
+        "strain": "ire1",
+        "experimental_label": 1,
+        "predicted_probability": 0.7067
+      },
+      {
+        "strain": "kar3",
+        "experimental_label": 1,
+        "predicted_probability": 0.6896
+      },
+      {
+        "strain": "elg1",
+        "experimental_label": 1,
+        "predicted_probability": 0.6802
+      },
+      {
+        "strain": "rad50",
+        "experimental_label": 1,
+        "predicted_probability": 0.6484
+      },
+      {
+        "strain": "clb2",
+        "experimental_label": 1,
+        "predicted_probability": 0.6306
+      },
+      {
+        "strain": "pop2",
+        "experimental_label": 1,
+        "predicted_probability": 0.6119
+      },
+      {
+        "strain": "cot1",
+        "experimental_label": 1,
+        "predicted_probability": 0.6
+      },
+      {
+        "strain": "tub3",
+        "experimental_label": 1,
+        "predicted_probability": 0.5651
+      },
+      {
+        "strain": "BNI",
+        "experimental_label": 1,
+        "predicted_probability": 0.5619
+      },
+      {
+        "strain": "TOP1",
+        "experimental_label": 1,
+        "predicted_probability": 0.5593
+      },
+      {
+        "strain": "rvs167",
+        "experimental_label": 1,
+        "predicted_probability": 0.5498
+      },
+      {
+        "strain": "RPL9B",
+        "experimental_label": 1,
+        "predicted_probability": 0.5333
+      },
+      {
+        "strain": "GAS1-20hrs",
+        "experimental_label": 1,
+        "predicted_probability": 0.471
+      },
+      {
+        "strain": "YPT",
+        "experimental_label": 1,
+        "predicted_probability": 0.4607
+      },
+      {
+        "strain": "bik1",
+        "experimental_label": 1,
+        "predicted_probability": 0.4542
+      },
+      {
+        "strain": "wtn01",
+        "experimental_label": 1,
+        "predicted_probability": 0.4523
+      },
+      {
+        "strain": "POL",
+        "experimental_label": 1,
+        "predicted_probability": 0.442
+      },
+      {
+        "strain": "SMI",
+        "experimental_label": 1,
+        "predicted_probability": 0.3779
+      },
+      {
+        "strain": "BRE1-2nd",
+        "experimental_label": 1,
+        "predicted_probability": 0.3563
+      },
+      {
+        "strain": "CNB",
+        "experimental_label": 1,
+        "predicted_probability": 0.3034
+      },
+      {
+        "strain": "dcg1",
+        "experimental_label": 1,
+        "predicted_probability": 0.2685
+      },
+      {
+        "strain": "rpn10",
+        "experimental_label": 1,
+        "predicted_probability": 0.2659
+      },
+      {
+        "strain": "sam2",
+        "experimental_label": 1,
+        "predicted_probability": 0.2239
+      },
+      {
+        "strain": "PAC",
+        "experimental_label": 1,
+        "predicted_probability": 0.2126
+      },
+      {
+        "strain": "arf1",
+        "experimental_label": 1,
+        "predicted_probability": 0.1945
+      },
+      {
+        "strain": "set2",
+        "experimental_label": 1,
+        "predicted_probability": 0.1668
+      },
+      {
+        "strain": "RIC1-2nd",
+        "experimental_label": 1,
+        "predicted_probability": 0.154
+      },
+      {
+        "strain": "kgd1",
+        "experimental_label": 1,
+        "predicted_probability": 0.1524
+      },
+      {
+        "strain": "arx1",
+        "experimental_label": 1,
+        "predicted_probability": 0.1235
+      },
+      {
+        "strain": "ctf18",
+        "experimental_label": 1,
+        "predicted_probability": 0.0437
+      }
+    ]
+  }
+}

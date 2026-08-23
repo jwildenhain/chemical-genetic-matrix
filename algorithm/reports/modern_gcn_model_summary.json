@@ -1,0 +1,7 @@
+{
+  "device": "cuda",
+  "train_roc_auc": 0.8501,
+  "valid_roc_auc": 0.6451,
+  "test_roc_auc": 0.6975,
+  "test_prc_auc": 0.4031
+}

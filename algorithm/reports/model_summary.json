@@ -1,0 +1,13 @@
+{
+  "device": "cuda",
+  "total_compounds": 2551,
+  "num_tasks": 277,
+  "original_train_size": 2040,
+  "mlsmote_train_size": 3040,
+  "train_roc_auc": 0.9823,
+  "valid_roc_auc": 0.5402,
+  "test_roc_auc": 0.5675,
+  "test_prc_auc": 0.3534,
+  "test_accuracy": 0.7765,
+  "final_loss": 0.0256
+}

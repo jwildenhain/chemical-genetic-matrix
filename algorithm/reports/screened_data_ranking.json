@@ -1,0 +1,392 @@
+{
+  "Fluconazole": {
+    "status": "Present in Screen",
+    "compound_id": "SPE01503975",
+    "library": "Spectrum",
+    "total_screened_strains": 97,
+    "total_active_strains": 2,
+    "total_inactive_strains": 95,
+    "actual_active_strains": [
+      {
+        "strain": "RIC1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.7264
+      },
+      {
+        "strain": "YPT",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.1529
+      }
+    ],
+    "sample_bottom_inactive_strains": [
+      {
+        "strain": "TEP",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.0122
+      },
+      {
+        "strain": "SPO22-26hrs",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.0205
+      },
+      {
+        "strain": "cla4",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.0275
+      },
+      {
+        "strain": "BNI",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.0304
+      },
+      {
+        "strain": "SMI",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.0443
+      }
+    ],
+    "sample_top_inactive_strains": [
+      {
+        "strain": "GAS1-24hrs",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.9443
+      },
+      {
+        "strain": "gcn5",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.9448
+      },
+      {
+        "strain": "tfp1",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.9681
+      },
+      {
+        "strain": "arx1",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.9713
+      },
+      {
+        "strain": "PAC",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.9739
+      }
+    ]
+  },
+  "Chrysin": {
+    "status": "Present in Screen",
+    "compound_id": "SPE01500709",
+    "library": "Spectrum",
+    "total_screened_strains": 89,
+    "total_active_strains": 48,
+    "total_inactive_strains": 41,
+    "actual_active_strains": [
+      {
+        "strain": "arx1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.9747
+      },
+      {
+        "strain": "PAC",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.9721
+      },
+      {
+        "strain": "gcn5",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.9505
+      },
+      {
+        "strain": "BCK",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.9369
+      },
+      {
+        "strain": "pex11",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.9288
+      },
+      {
+        "strain": "kar3",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.9147
+      },
+      {
+        "strain": "sam2",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.9108
+      },
+      {
+        "strain": "TOP",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.8905
+      },
+      {
+        "strain": "elg1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.8819
+      },
+      {
+        "strain": "cot1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.8814
+      },
+      {
+        "strain": "pre9",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.8771
+      },
+      {
+        "strain": "FKS",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.8364
+      },
+      {
+        "strain": "tub3",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.8027
+      },
+      {
+        "strain": "RIC1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.7252
+      },
+      {
+        "strain": "GAS1-20hrs",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.6677
+      },
+      {
+        "strain": "met16",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.64
+      },
+      {
+        "strain": "arf1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.6037
+      },
+      {
+        "strain": "HOC",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.5803
+      },
+      {
+        "strain": "Bck",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.5581
+      },
+      {
+        "strain": "ire1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.5003
+      },
+      {
+        "strain": "kgd1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.4894
+      },
+      {
+        "strain": "dcg1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.473
+      },
+      {
+        "strain": "rad50",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.4703
+      },
+      {
+        "strain": "BRE1-2nd",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.4691
+      },
+      {
+        "strain": "rvs167",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.4574
+      },
+      {
+        "strain": "ctf18",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.4478
+      },
+      {
+        "strain": "mcm21",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.4254
+      },
+      {
+        "strain": "apc9",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.4079
+      },
+      {
+        "strain": "TOP1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.3762
+      },
+      {
+        "strain": "RPL9B",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.3334
+      },
+      {
+        "strain": "htz1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.3316
+      },
+      {
+        "strain": "nup100",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.3141
+      },
+      {
+        "strain": "rpn10",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.2842
+      },
+      {
+        "strain": "bmi1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.2724
+      },
+      {
+        "strain": "bik1",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.2694
+      },
+      {
+        "strain": "clb2",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.2383
+      },
+      {
+        "strain": "ubp8",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.2318
+      },
+      {
+        "strain": "POL",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.2281
+      },
+      {
+        "strain": "pop2",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.2223
+      },
+      {
+        "strain": "CNB",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.2098
+      },
+      {
+        "strain": "wtn01",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.1696
+      },
+      {
+        "strain": "RIC1-2nd",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.1524
+      },
+      {
+        "strain": "YPT",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.1521
+      },
+      {
+        "strain": "set2",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.1358
+      },
+      {
+        "strain": "Sap",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.1128
+      },
+      {
+        "strain": "SMI",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.0427
+      },
+      {
+        "strain": "BNI",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.0303
+      },
+      {
+        "strain": "cla4",
+        "experimental_label": 1,
+        "model_predicted_probability": 0.0275
+      }
+    ],
+    "sample_bottom_inactive_strains": [
+      {
+        "strain": "TEP",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.0112
+      },
+      {
+        "strain": "SPO22-26hrs",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.0201
+      },
+      {
+        "strain": "pdrn01",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.0397
+      },
+      {
+        "strain": "CNB1-Ura",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.1007
+      },
+      {
+        "strain": "CHS",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.1272
+      }
+    ],
+    "sample_top_inactive_strains": [
+      {
+        "strain": "FUR",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.9242
+      },
+      {
+        "strain": "LGE",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.9302
+      },
+      {
+        "strain": "rom2",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.9492
+      },
+      {
+        "strain": "MT2481-FEN",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.9632
+      },
+      {
+        "strain": "tfp1",
+        "experimental_label": 0,
+        "model_predicted_probability": 0.9669
+      }
+    ]
+  },
+  "Ciclosporine": {
+    "status": "Not Present in 4-Library Experimental Screen (Spectrum, SPECMTS3, Maybridge1000, Lopac)",
+    "compound_id": "N/A",
+    "active_strains": [],
+    "inactive_strains_sample": []
+  },
+  "Mebendazole": {
+    "status": "Not Present in 4-Library Experimental Screen (Spectrum, SPECMTS3, Maybridge1000, Lopac)",
+    "compound_id": "N/A",
+    "active_strains": [],
+    "inactive_strains_sample": []
+  }
+}

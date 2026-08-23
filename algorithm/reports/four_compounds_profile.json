@@ -1,0 +1,254 @@
+{
+  "Ciclosporine": {
+    "name": "Ciclosporine",
+    "smiles": "CC=CCC(C)C(O)C1C(=O)NC(CC)C(=O)N(C)CC(=O)N(C)C(CC(C)C)C(=O)NC(C(C)C)C(=O)N(C)C(CC(C)C)C(=O)NC(C)C(=O)NC(C)C(=O)N(C)C(CC(C)C)C(=O)N(C)C(CC(C)C)C(=O)N(C)C(C(C)C)C(=O)N1C",
+    "compound_id": "N/A (External Candidate)",
+    "library": "N/A",
+    "top_predicted_strains": [
+      [
+        "dbp3",
+        0.9941598176956177
+      ],
+      [
+        "rom2",
+        0.9825913310050964
+      ],
+      [
+        "FUR",
+        0.965719997882843
+      ],
+      [
+        "hxt1",
+        0.9585386514663696
+      ],
+      [
+        "rad50",
+        0.9535309076309204
+      ],
+      [
+        "pdrn01",
+        0.9493025541305542
+      ],
+      [
+        "LGE",
+        0.9076027274131775
+      ],
+      [
+        "HOC",
+        0.8897976279258728
+      ],
+      [
+        "GPR",
+        0.8877461552619934
+      ],
+      [
+        "LCB",
+        0.8767459392547607
+      ]
+    ],
+    "experimental_screened_strains": 0,
+    "experimental_active_strains": []
+  },
+  "Mebendazole": {
+    "name": "Mebendazole",
+    "smiles": "COC(=O)Nc1nc2ccc(C(=O)c3ccccc3)cc2[nH]1",
+    "compound_id": "N/A (External Candidate)",
+    "library": "N/A",
+    "top_predicted_strains": [
+      [
+        "dbp3",
+        0.9946770668029785
+      ],
+      [
+        "rom2",
+        0.9830228686332703
+      ],
+      [
+        "FUR",
+        0.9645794630050659
+      ],
+      [
+        "hxt1",
+        0.9542515873908997
+      ],
+      [
+        "pdrn01",
+        0.9539591073989868
+      ],
+      [
+        "rad50",
+        0.9455824494361877
+      ],
+      [
+        "LGE",
+        0.9205009341239929
+      ],
+      [
+        "GPR",
+        0.8894919157028198
+      ],
+      [
+        "HOC",
+        0.8794207572937012
+      ],
+      [
+        "sec22",
+        0.8730770349502563
+      ]
+    ],
+    "experimental_screened_strains": 0,
+    "experimental_active_strains": []
+  },
+  "Fluconazole": {
+    "name": "Fluconazole",
+    "smiles": "OC(Cn1cncn1)(Cn1cncn1)c1ccc(F)cc1F",
+    "compound_id": "SPE01503975",
+    "library": "Spectrum",
+    "top_predicted_strains": [
+      [
+        "dbp3",
+        0.9944909811019897
+      ],
+      [
+        "rom2",
+        0.9829685091972351
+      ],
+      [
+        "FUR",
+        0.9632755517959595
+      ],
+      [
+        "hxt1",
+        0.9560906887054443
+      ],
+      [
+        "pdrn01",
+        0.9551351070404053
+      ],
+      [
+        "rad50",
+        0.9438413381576538
+      ],
+      [
+        "LGE",
+        0.9214425086975098
+      ],
+      [
+        "HOC",
+        0.8857300281524658
+      ],
+      [
+        "GPR",
+        0.881792426109314
+      ],
+      [
+        "sec22",
+        0.8738566637039185
+      ]
+    ],
+    "experimental_screened_strains": 97,
+    "experimental_active_strains": [
+      "RIC1",
+      "YPT"
+    ]
+  },
+  "Chrysin": {
+    "name": "Chrysin",
+    "smiles": "O=c1cc(-c2ccccc2)oc2cc(O)cc(O)c12",
+    "compound_id": "SPE01500709",
+    "library": "Spectrum",
+    "top_predicted_strains": [
+      [
+        "dbp3",
+        0.9946203231811523
+      ],
+      [
+        "rom2",
+        0.983324408531189
+      ],
+      [
+        "FUR",
+        0.964445173740387
+      ],
+      [
+        "hxt1",
+        0.9569826126098633
+      ],
+      [
+        "pdrn01",
+        0.9535430669784546
+      ],
+      [
+        "rad50",
+        0.9450305104255676
+      ],
+      [
+        "LGE",
+        0.9208476543426514
+      ],
+      [
+        "HOC",
+        0.8918722867965698
+      ],
+      [
+        "GPR",
+        0.8861222267150879
+      ],
+      [
+        "LCB",
+        0.8680629730224609
+      ]
+    ],
+    "experimental_screened_strains": 89,
+    "experimental_active_strains": [
+      "BCK",
+      "BNI",
+      "BRE1-2nd",
+      "Bck",
+      "CNB",
+      "FKS",
+      "GAS1-20hrs",
+      "HOC",
+      "PAC",
+      "POL",
+      "RIC1",
+      "RIC1-2nd",
+      "RPL9B",
+      "SMI",
+      "Sap",
+      "TOP",
+      "TOP1",
+      "YPT",
+      "apc9",
+      "arf1",
+      "arx1",
+      "bik1",
+      "bmi1",
+      "cla4",
+      "clb2",
+      "cot1",
+      "ctf18",
+      "dcg1",
+      "elg1",
+      "gcn5",
+      "htz1",
+      "ire1",
+      "kar3",
+      "kgd1",
+      "mcm21",
+      "met16",
+      "nup100",
+      "pex11",
+      "pop2",
+      "pre9",
+      "rad50",
+      "rpn10",
+      "rvs167",
+      "sam2",
+      "set2",
+      "tub3",
+      "ubp8",
+      "wtn01"
+    ]
+  }
+}
