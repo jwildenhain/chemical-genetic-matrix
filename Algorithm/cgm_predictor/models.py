@@ -5,6 +5,8 @@ from torch_geometric.nn import GCNConv, global_max_pool, global_add_pool
 from torch_geometric.data import Data
 import deepchem as dc
 import numpy as np
+import json
+import os
 
 # ---------------------------------------------------------
 # PyTorch Geometric (PyG) Model Definition
@@ -141,6 +143,14 @@ class CGMPredictor:
         else:
             raise ValueError(f"Unknown model_type: {model_type}")
 
+        # Load baseline frequencies for nuanced prediction
+        try:
+            freq_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "strain_frequencies.json")
+            with open(freq_path, 'r') as f:
+                self.strain_frequencies = json.load(f)
+        except Exception as e:
+            self.strain_frequencies = {}
+
     def predict(self, smiles):
         """Predicts bioactivity probabilities for a given SMILES string."""
         if self.model_type == 'ensemble':
@@ -193,3 +203,35 @@ class CGMPredictor:
                 out = self.model(x, edge_index, ecfp, batch)
                 probs = torch.sigmoid(out).numpy()[0]
             return probs
+
+    def predict_nuanced(self, smiles, tasks):
+        """
+        Predicts bioactivity and returns nuanced Confidence Scores.
+        Returns a list of tuples: (probability, confidence_score)
+        """
+        raw_probs = self.predict(smiles)
+        
+        # Calculate mean prediction for this compound to penalize promiscuity
+        compound_promiscuity = np.mean(raw_probs)
+        
+        nuanced_scores = []
+        for i, task in enumerate(tasks):
+            prob = raw_probs[i]
+            
+            # Base background frequency
+            base_freq = self.strain_frequencies.get(task, 0.05)
+            if base_freq == 0:
+                base_freq = 0.01 # prevent div by zero
+                
+            # Fold Change (how many times more likely than background)
+            fc = prob / (base_freq + 0.01)
+            
+            # Compound Promiscuity Penalty
+            penalty = 1.0
+            if compound_promiscuity > base_freq + 0.1:
+                penalty = (base_freq + 0.1) / compound_promiscuity
+                
+            confidence_score = fc * penalty
+            nuanced_scores.append((prob, confidence_score))
+            
+        return nuanced_scores
